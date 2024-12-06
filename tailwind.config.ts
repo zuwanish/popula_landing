@@ -12,6 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        urbanist: ["Urbanist", "sans-serif"],
+        hind: ["Hind", "sans-serif"],
+      },
     },
   },
   plugins: [],

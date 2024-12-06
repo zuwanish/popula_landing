@@ -1,0 +1,36 @@
+/* Ensure swiper takes up full width */
+.swiper-container {
+    width: 100%;
+    padding-bottom: 50px; /* Space below the Swiper container */
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+    margin: 0 auto; /* Center the swiper */
+  }
+  
+  /* Make sure swiper-wrapper and swiper-slide behave as flexbox */
+  .swiper-wrapper {
+    display: flex; /* This should be the default for Swiper, but ensure it here */
+    justify-content: center; /* Center slides horizontally */
+    align-items: center; /* Vertically center slides */
+  }
+  
+  /* Style for swiper-slide to ensure margin and alignment */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px; /* Space between slides */
+  }
+  
+  /* Optional: Add some styling for the cards to make them look better */
+  .swiper-slide .card {
+    max-width: 100%; /* Prevent card from stretching too wide */
+    height: auto; /* Ensure cards don't stretch vertically */
+  }
+  
+  /* Optional: Additional media query styling for responsive design */
+  @media (max-width: 1024px) {
+    .swiper-slide {
+      margin: 0 10px; /* Smaller margin for medium screens */
+    }
+  }
+  
